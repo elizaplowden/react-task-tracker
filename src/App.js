@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
 
 // could also be a class
 function App() {
@@ -8,8 +7,7 @@ function App() {
   return (
     // you can only return a single parent element
     <div className="container">
-      <h1>Hello From React</h1>
-      <h2>Hello {name}</h2>
+      <Header />
     </div>
   );
 }
