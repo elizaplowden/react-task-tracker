@@ -3,15 +3,11 @@ import Button from './Button';
 // we don't need this any more
 // import React from 'react'
 
-const Header = ({title}) => {
-  const onClick = () => {
-    console.log('Click')
-  }
-
+const Header = ({title, onAdd, showAdd}) => {
   return (
     <header className='header'>
       <h1>{title}</h1>
-      <Button color='green' text='Add' onClick={onClick} />
+      <Button color={showAdd ? 'red' : 'green' } text={showAdd ? 'Close' : 'Add' } onClick={onAdd} />
     </header>
   )
 }
